@@ -9,7 +9,7 @@ package entidades;
  *
  * @author a2058944
  */
-public class Profissional {
+public class Profissional extends Pessoa{
     private int crefito;
     private String especialidade;
 
