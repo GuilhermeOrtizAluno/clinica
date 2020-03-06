@@ -15,6 +15,22 @@ public class Pessoa {
     private String cpf, nome, endereco, telefone, sexo, foto;
     private Date dataNascimento;
 
+    public Pessoa() {
+        nome = "Nome da Pessoa";
+    }
+
+    public Pessoa(String cpf, String nome, String endereco, String telefone, String sexo, String foto, Date dataNascimento) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.sexo = sexo;
+        this.foto = foto;
+        this.dataNascimento = dataNascimento;
+    }
+    
+    
+    
     public String getCpf() {
         return cpf;
     }

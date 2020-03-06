@@ -11,10 +11,11 @@ import java.util.Date;
  *
  * @author a2058944
  */
-public class Agendamento {
+public class Agendamento implements Pagamento{
     private Date dataAgendamento;
     private int numSessao, formaPagto;
     private double valorCobrado;
+    private Procedimentos procedimentos;  
 
     public Date getDataAgendamento() {
         return dataAgendamento;
@@ -48,4 +49,26 @@ public class Agendamento {
         this.valorCobrado = valorCobrado;
     }
     
+    @Override
+    public void selecionarPagamento(int tipo) {
+        double valor = procedimentos.getValor();
+        switch(tipo){   
+            case 1:
+                valorCobrado = valor * 1.005;
+            break;
+            case 2:
+            
+            break;
+            case 3:
+            
+            break;
+            case 4:
+            
+            break;
+            case 5:
+            
+            break;
+            default: System.out.println("Erro69!"); 
+        }
+    }
 }
