@@ -12,8 +12,8 @@ import java.util.Date;
  * @author a2058944
  */
 public class Pessoa {
-    String cpf, nome, endereco, telefone, sexo, foto;
-    Date dataNascimento;
+    private String cpf, nome, endereco, telefone, sexo, foto;
+    private Date dataNascimento;
 
     public String getCpf() {
         return cpf;
