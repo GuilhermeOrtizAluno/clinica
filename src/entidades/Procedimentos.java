@@ -9,7 +9,7 @@ package entidades;
  *
  * @author a2058944
  */
-public class Procedimentos {
+public class Procedimentos implements Pagamento{
     private int codigo, numSessoes;
     private double valor;
     private String descricao;
@@ -53,6 +53,28 @@ public class Procedimentos {
 
     public void setOrientacoes(StringBuffer orientacoes) {
         this.orientacoes = orientacoes;
+    }
+
+    @Override
+    public void selecionarPagamento(int tipo) {
+        switch(tipo){   
+            case 1:
+            
+            break;
+            case 2:
+            
+            break;
+            case 3:
+            
+            break;
+            case 4:
+            
+            break;
+            case 5:
+            
+            break;
+            default: System.out.println("Erro69!"); 
+        }
     }
     
 }
