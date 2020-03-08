@@ -5,6 +5,8 @@
  */
 package entidades;
 
+import java.util.Date;
+
 /**
  *
  * @author a2058944
@@ -12,6 +14,14 @@ package entidades;
 public class Paciente extends Pessoa{
     private int convenio;
     private String numeroCarterinha;
+
+    public Paciente() {
+    }
+
+    public Paciente(int convenio, String numeroCarterinha) {
+        this.convenio = convenio;
+        this.numeroCarterinha = numeroCarterinha;
+    }
 
     public int getConvenio() {
         return convenio;

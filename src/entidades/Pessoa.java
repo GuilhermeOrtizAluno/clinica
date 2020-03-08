@@ -29,8 +29,6 @@ public class Pessoa {
         this.dataNascimento = dataNascimento;
     }
     
-    
-    
     public String getCpf() {
         return cpf;
     }

@@ -13,6 +13,14 @@ public class Profissional extends Pessoa{
     private int crefito;
     private String especialidade;
 
+    public Profissional() {
+    }
+
+    public Profissional(int crefito, String especialidade) {
+        this.crefito = crefito;
+        this.especialidade = especialidade;
+    }
+
     public int getCrefito() {
         return crefito;
     }

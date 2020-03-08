@@ -15,6 +15,14 @@ public class Procedimentos{
     private String descricao;
     private StringBuffer orientacoes;
 
+    public Procedimentos(int codigo, int numSessoes, double valor, String descricao, StringBuffer orientacoes) {
+        this.codigo = codigo;
+        this.numSessoes = numSessoes;
+        this.valor = valor;
+        this.descricao = descricao;
+        this.orientacoes = orientacoes;
+    }
+
     public int getCodigo() {
         return codigo;
     }
@@ -53,5 +61,6 @@ public class Procedimentos{
 
     public void setOrientacoes(StringBuffer orientacoes) {
         this.orientacoes = orientacoes;
-    }    
+    }
+    
 }

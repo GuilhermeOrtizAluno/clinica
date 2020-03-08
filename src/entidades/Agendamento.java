@@ -54,21 +54,21 @@ public class Agendamento implements Pagamento{
         double valor = procedimentos.getValor();
         switch(tipo){   
             case 1:
-                valorCobrado = valor * 1.005;
+                valorCobrado = valor * 1.05;
             break;
             case 2:
-            
+                valorCobrado = valor * 0.90;
             break;
             case 3:
-            
+                valorCobrado = valor * 1.01;
             break;
             case 4:
-            
+                valorCobrado = valor * 0.95;
             break;
             case 5:
-            
+                valorCobrado = valor * 0.85;
             break;
-            default: System.out.println("Erro69!"); 
+            default: System.out.println("Erro!"); 
         }
     }
 }
